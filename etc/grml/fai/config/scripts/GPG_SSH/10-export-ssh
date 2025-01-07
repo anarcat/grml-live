@@ -1,0 +1,4 @@
+#!/bin/sh
+
+echo "deploying anarcat@debian.org SSH key to $target"
+gpg --export-ssh-key anarcat@debian.org | tee -a $target/root/.ssh/authorized_keys
